@@ -9,9 +9,10 @@
 
 int main(void)
 {
-	char alpha;
+	char alpha = a;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		putchar(alpha);
+	while (alpha <= 'z')
+		putchar("%c", alpha);
+		alpha++;
 	putchar("\n");
 }
