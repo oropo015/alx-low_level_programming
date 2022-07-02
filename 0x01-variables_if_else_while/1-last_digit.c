@@ -12,6 +12,7 @@ int main(void)
 	int n;
 	int check_num;
 	char str[] = "Last digit of";
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	check_num = n % 10;
