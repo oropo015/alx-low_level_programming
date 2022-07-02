@@ -18,7 +18,8 @@ int main(void)
 			putchar(num);
 			putchar(',');
 			putchar(' ');
-		}else if (num == '9')
+		}
+		else if (num == '9')
 			putchar(num);
 	}
 	return (0);
