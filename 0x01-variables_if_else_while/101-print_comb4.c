@@ -32,5 +32,5 @@ int main(void)
 		x++;
 		y++;
 	}
-	return (0);	
+	return (0);
 }
