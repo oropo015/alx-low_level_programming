@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int i;
+	int i, k;
 	int j;
 	int x = 1;
 	int y = 2;
