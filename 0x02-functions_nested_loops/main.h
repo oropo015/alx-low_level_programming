@@ -9,5 +9,9 @@
 
 int main(void)
 {
-	write(1, "_putchar", 8);
+	char alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+		putchar(alpha);
+	return (0);
 }
