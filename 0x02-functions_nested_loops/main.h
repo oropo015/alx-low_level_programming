@@ -6,6 +6,8 @@
  * Return: Always 0 (Success)
  */
 
+void print_a-z(void);
+
 int main(void)
 {
 	print_a-z();
