@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 /**
  * main -Entry Point
@@ -7,12 +5,11 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_a-z(void)
 {
-	char alpha;
+	int alpha;
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
-		putchar(alpha);
-	putchar('\n');
-	return (0);
+		_putchar(alpha);
+	_putchar('\n');
 }
