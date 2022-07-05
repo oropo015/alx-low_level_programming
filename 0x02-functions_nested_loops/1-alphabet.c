@@ -5,7 +5,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_a-z(void)
+void print_atoz(void)
 {
 	int alpha;
 
