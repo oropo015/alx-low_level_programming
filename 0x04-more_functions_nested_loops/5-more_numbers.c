@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - function that prints 10 times numbers 0 to 14
- * _putchar 
+ * _putchar
  * Return: new line
  */
 void more_numbers(void)
