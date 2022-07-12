@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - function that reset values to 98
- * @n : main input
- * 
+ * reset_to_98 - Funtion reset input to 98
  */
 void reset_to_98(int *n)
 {
