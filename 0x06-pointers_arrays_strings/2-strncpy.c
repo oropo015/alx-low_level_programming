@@ -2,8 +2,8 @@
 
 /**
  * _strncpy - function that copie a string
- * @dest: copy 1
- * @src: copy 2
+ * @dest: copy
+ * @src: copy
  * @n: input number of char
  * Return: Always 0 (Success)
  */
