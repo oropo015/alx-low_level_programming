@@ -7,19 +7,18 @@
  */
 char *leet(char *n)
 {
-	int i, count;
+	int i, a;
 	int check[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int mod[] = {'4', '3', '0', '7', '1'};
-	arr_size = sizeof(check) / sizeof(int);
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-		for (count = 0; count <= arr_size; count++)
+		for (a = 0; a <= 9; a++)
 		{
-			if (n[i] == check[count])
+			if (n[i] == check[a])
 			{
-				n[i] = mod[count / 2];
-				count = arr_size;
+				n[i] = mod[a / 2];
+				a = 9;
 			}
 		}
 	}
