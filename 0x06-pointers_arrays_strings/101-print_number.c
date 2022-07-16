@@ -1,28 +1,27 @@
 #include "main.h"
 
 /**
- * print_number - function that prints integers
- * @n:  number
- * Return: 0
+ * leet - Function that convert a string to leet code
+ * @n: input
+ * Return: Always 0 (Success)
  */
-void print_number(int n)
+char *leet(char *n)
 {
-	int j = n, a = 1, count, m;
+	int i, a;
+	int check[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int mod[] = {'4', '3', '0', '7', '1'};
 
-	for (count = 0; j != 0; count++)
-		j = j / 10;
-	while (count > 1)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		a = a * 10;
-		count --;
+		for (a = 0; a <= 9; a++)
+		{
+			if (n[i] == check[a])
+			{
+				n[i] = mod[a / 2];
+				a = 9;
+			}
+		}
 	}
 
-	while (n != 0)
-	{
-		m = n / a;
-		n = n % a;
-		a = a / 10;
-		_putchar(m + '0');
-	}
-
+	return (n);
 }
