@@ -7,8 +7,12 @@
  */
 void print_number(int n)
 {
-	int j = n, a = 1, count, m;
+	int j, a = 1, count, m;
 	
+	if (n < 0)
+		j = n * -1;
+	else
+		j = n;
 	for (count = 0; j != 0; count++)
 		j = j / 10;
 	while (count > 1)
@@ -18,6 +22,11 @@ void print_number(int n)
 	}
 	while (n != 0)
 	{
+		if (n < 0)
+		{
+			_putchar('-');
+			n = n * -1;
+		}
 		m = n / a;
 		n = n % a;
 		a = a / 10;
