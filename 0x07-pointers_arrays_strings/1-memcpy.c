@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * _memcpy - Main function
- * @dest: Destination
- * @src: Source
- * @n: Number of bytes
- * Return: Destination;
+ * _memcpy - Memory copy function
+ * @dest: input 1
+ * @src: input 2
+ * @n: input 3
+ * Return: 0
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
-	
-	while (n >=0)
-	{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
 		dest[i] = src[i];
-		i++;
-		n--;
-	}
+
 	return (dest);
 }
