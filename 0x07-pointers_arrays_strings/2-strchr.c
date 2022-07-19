@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strchr - Main function
- * @s: Source
- * @c: Charater to find
- * Return: Destination;
+ * _strchr - function tosearch for a char
+ * @s: input 1
+ * @c: input 2
+ * Return: 0
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int i;
 
@@ -15,5 +15,6 @@ char *_strchr(char *s, char c);
 		if (s[i] == c)
 			return (s + i);
 	}
+
 	return (NULL);
 }
