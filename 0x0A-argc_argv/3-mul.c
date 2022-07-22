@@ -3,15 +3,15 @@
 
 /**
  * main - Main function
- * atoi is a function that converts a string into an int
+ * atoi is a converts a string into an int
  * @argc: arguments
- * @argv: array pointing to arguments
+ * @argv: array of arguments
  * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, count = 1;
 
 	if (argc != 3)
 	{
@@ -20,7 +20,11 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		for (i = 1; i < argc; i++)
+		{
+			count *= atoi(argv[i]);
+		}
+		printf("%d\n", count);
 	}
 	return (0);
 }
