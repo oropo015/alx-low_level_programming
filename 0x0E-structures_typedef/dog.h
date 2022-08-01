@@ -5,7 +5,6 @@
  * @owner: dog owner
  * Description: Dog Definition
  */
-
 struct dog
 {
 	char *name;
