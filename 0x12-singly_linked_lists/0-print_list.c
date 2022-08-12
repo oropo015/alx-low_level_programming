@@ -5,6 +5,7 @@
  * @h: A pointer
  * Return: number of nodes in the list
  */
+
 size_t print_list(const list_t *h)
 {
 	const list_t *list;
