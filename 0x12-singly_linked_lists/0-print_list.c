@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-
 /**
  * print_list - prints list of elements passed to the funcction
  * @h: A pointer
