@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib>
+#include <stdio.h>
 
 /**
  * print_dlistint - prints data in nodes
